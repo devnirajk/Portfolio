@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+  /* Center timeline */
+  .timeline-container {
+    position: relative;
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 60px;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    width: 2px;
+    background-color: #d3d3d3;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 2px dashed #000; /* Dotted timeline */
+  }
+  
+  /* Experience containers */
+  .experience-container {
+    width: 50%;
+    padding: 10px 20px;
+    position: relative;
+  }
+  
+  .experience-container.left {
+    left: 0;
+    text-align: right; /* Align text to the right */
+  }
+  
+  .experience-container.right {
+    left: 50%;
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Card styles */
+  .experience-card {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    margin: 10px auto;
+  }
+  
+  .left .experience-card {
+    margin-right: auto; /* Push to the left */
+  }
+  
+  .right .experience-card {
+    margin-left: auto; /* Push to the right */
+  }
+  
+  /* Styling for rounded images */
+  img.rounded-full {
+    border-radius: 50%;
+  }
+  </style>
+  
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="flex justify-between items-center w-full h-fit p-6 rounded-lg shadow-lg mb-8 bg-white border-dashed border-b-2 border-sky-500">
+    <div class="flex items-center">
+      <div class="flex-shrink-0 mr-4">
+        <img class="rounded-full w-40 h-40 object-cover" src="../profilepic.jpeg" alt="company_logo">
+      </div>
+      <div class="flex flex-col justify-center">
+        <h1 class="text-2xl font-semibold text-gray-800">Niraj Kumar</h1>
+        <h5 class="text-sm text-gray-600">Software Engineer | B.Tech Electrical Engineering</h5>
+        <h4 class="text-sm text-gray-600 mb-4">devnirajkumar01@gmail.com | +91-8404809235</h4>
+        <button class="bg-blue-500 text-white text-md rounded-full p-2 px-4 hover:bg-blue-600 transition-colors w-28">
+          Resume
+        </button>
+      </div>
+    </div>
+  
+  
+    <div class="flex space-x-6">
+      <a href="https://leetcode.com/u/imnirajky/" target="_blank" class="group relative">
+        <div class="w-10 h-10 p-2 flex rounded-md items-center justify-center shadow-lg transition-transform hover:scale-110">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="w-fit h-fit">
+        </div>
+        <span class="absolute bottom-[-25px] left-0 invisible group-hover:visible bg-gray-800 text-white text-xs rounded-md px-2 py-1">LeetCode</span>
+      </a>
+      
+
+      <a href="https://github.com/devnirajk" target="_blank" class="group relative">
+        <div class="w-10 h-10 p-2 rounded-md flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+          <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub" class="w-fit h-fit">
+        </div>
+        <span class="absolute bottom-[-25px] left-0 invisible group-hover:visible bg-gray-800 text-white text-xs rounded-md px-2 py-1">GitHub</span>
+      </a>
+      
+
+      <a href="https://www.instagram.com/nirajkumar_2001/" target="_blank" class="group relative">
+        <div class="w-10 h-10 rounded-md p-2 flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1024px-Instagram_logo_2022.svg.png" alt="Instagram" class="w-fit h-fit">
+        </div>
+        <span class="absolute bottom-[-25px] left-0 invisible group-hover:visible bg-gray-800 text-white text-xs rounded-md px-2 py-1">Instagram</span>
+      </a>
+    </div>
+  </div>
+  
+  <h1 class="border-sky-300 text-gray-600 rounded-b-md p-2 flex justify-center font-semibold shadow-lg shadow-blue-200 text-md mb-16">Work Experience</h1>
+   <div class="timeline-container">
+    <!-- Timeline Line -->
+    <div class="timeline-line"></div>
+  
+    <!-- First experience (left) -->
+    <div class="experience-container left">
+      <div class="experience-card">
+        <div class="flex-shrink-0 mr-4">
+          <img class="rounded-full w-20 h-20 object-cover" src="https://media.licdn.com/dms/image/v2/D4D0BAQGxOJcgiCCu2w/company-logo_200_200/company-logo_200_200/0/1702536122248/reshita_logo?e=1736985600&v=beta&t=DoMwSmd5tG7MHfb-oqOrcTU1A7YfOOu58PoW4dK0HaE" alt="company_logo">
+        </div>
+        <div class="flex flex-col justify-center">
+          <h1 class="text-lg font-semibold text-gray-800">Software Engineer-1 • Reshita</h1>
+          <h5 class="text-sm text-gray-600">Joined May 2024 - Present</h5>
+          <h5 class="text-sm text-gray-600">Remote</h5>
+          <p class="text-sm mt-2 text-gray-700 justify-start">
+            • Designed and implemented RESTful APIs for various functionalities, including CRUD operations.<br>
+            • Configured and implemented Spring Security to manage role-based access control, extracting payload from JWT tokens to ensure secure access.<br>
+            • Integrated Razorpay API for handling payments and subscriptions.<br>
+            • Implemented OAuth 2.0 authentication with Google.<br>
+            • Integrated AWS S3 to implement image upload functionality.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="experience-container right">
+      <div class="experience-card">
+        <div class="flex-shrink-0 mr-4">
+          <img class="rounded-full w-20 h-20 object-cover" src="https://cdn.techinasia.com/data/images/bJZeULmwSpQb08HxHJ2os8uJmmZnEYXmXdBGeo4E.png" alt="company_logo">
+        </div>
+        <div class="flex flex-col justify-center">
+          <h1 class="text-lg font-semibold text-gray-800">Project Engineer • Crio.Do</h1>
+          <h5 class="text-sm text-gray-600">Joined Dec 2023 - April 2024</h5>
+          <h5 class="text-sm text-gray-600">Bengaluru Full-time • Onsite</h5>
+          <p class="text-sm mt-2 text-gray-700">
+            • Responsible for testing the UI of their website using Java with Selenium.<br>
+            • Gained experience in API testing, ensuring functionality, reliability, and performance of backend services.
+          </p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="experience-container left">
+      <div class="experience-card">
+        <div class="flex-shrink-0 mr-4">
+          <img class="rounded-full w-20 h-20 object-cover" src="https://path/to/image.jpg" alt="company_logo">
+        </div>
+        <div class="flex flex-col justify-center">
+          <h1 class="text-lg font-semibold text-gray-800">Internship • XYZ Company</h1>
+          <h5 class="text-sm text-gray-600">Joined May 2023 - Aug 2023</h5>
+          <h5 class="text-sm text-gray-600">Remote</h5>
+          <p class="text-sm mt-2 text-gray-700">
+            • Implemented socket connections on the dashboard page.<br>
+            • Developed OTP-based authentication for both backend and frontend.<br>
+            • Revamped the login and signup UI to enhance user experience.<br>
+            • Collaborated in a team of 4 to deliver high-quality code and features on time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <h1 class="border-sky-300 text-gray-600 rounded-b-md p-2 flex justify-center font-semibold shadow-lg shadow-blue-200 text-md mb-16">Tech Skills</h1>
+  <div class="star-rating flex justify-evenly mb-16">
+    <div class="left-column flex flex-col space-y-4 w-1/2 p-2 items-center"></div>
+    <div class="right-column flex flex-col space-y-4 w-1/2 p-2 items-center"></div>
+  </div>
+
+  <div class="bg-blue-200 text-md font-semibold font-mono flex justify-center items-center h-20 text-gray-600 rounded-t-full">
+        Made with ❤️ by Niraj
+  </div>
+<script src="index.js">
+</script>
+</body>
+</html>
